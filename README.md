@@ -1,4 +1,4 @@
-# Oh My Posh Configuration
+# ZSH Setup
 
 This repository contains my personal configuration for [Oh My Posh](https://ohmyposh.dev/).
 
