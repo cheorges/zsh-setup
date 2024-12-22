@@ -31,6 +31,7 @@ Recommended plugins:
 - [zsh-bat](https://github.com/fdellwing/zsh-bat)
 - [fzf](https://github.com/junegunn/fzf)
 - [eza](https://github.com/eza-community/eza)
+- [bat](https://github.com/sharkdp/bat)
 
 Check you have activate the plugins in your `.zshrc` file:
 
@@ -61,4 +62,13 @@ alias lt=lt
 alias gw='./gradlew'
 
 zstyle ':completion:*' menu select
+
+# alternative fix if complition not work:
+CASE_SENSITIVE="false"
+setopt MENU_COMPLETE
+setopt no_list_ambiguous
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu yes select
+
 ```
